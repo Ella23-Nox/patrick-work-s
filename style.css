@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #03141ef5;
+  --text-color: #fff;
+}
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  color: var(--text-color);
+  & .logo {
+    border: 1px solid white;
+    width: 1.3rem;
+    background-color: #fff;
+    border-radius: 50px;
+  }
+
+  & .nox {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  & a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+}
+.buttons {
+  border-radius: 10px;
+  padding: 8px 10px;
+}
